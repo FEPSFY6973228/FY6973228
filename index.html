@@ -76,27 +76,14 @@ e<!DOCTYPE html>
                 <tr>
                   <td><a href="#References">References</td>
                 </tr>
-              </table>        
-<!DOCTYPE html>
-<html>
-<head>
-<title>Change Button Colour</title>
-</head>
-<body>
-<button id="colorButton">Click me to change colour</button>
-<script>
-var button = document.getElementById("colorButton");
-function changeColor() {
-var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
-button.style.backgroundColor = randomColor;
-}
-button.addEventListener("click", changeColor);
-</script>
-</body>
-</html>
+              </table>     
 
       <head>
       <title>My Daily Activities</title>
 <script type=”text/javascript” src=https://www.gstatic.com/charts/loader.js></script>
       </head>
+
+            <div id=”chart_div”>
+              function drawChart() {var data = google.visualization.arrayToDataTable([[‘Task’, ‘Hours per Day’],[‘Work’, 8],[‘Sleep’, 8],[‘Eat’, 2],[‘Study’, 4],[‘Exercise’, 2]]);var options = {title: ‘My Daily Activities’};var chart = new google.visualization.PieChart(document.getElementById(‘chart_div’));chart.draw(data, options);}
+</script></div>
         
