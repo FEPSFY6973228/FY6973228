@@ -96,11 +96,13 @@ e<!DOCTYPE html>
                                     [‘Eat’, 2],
                                     [‘Study’, 4],
                                     [‘Exercise’, 2]
-]);
-var options = {
-title: ‘My Daily Activities’
-};
-var chart = new google.visualization.PieChart(document.getElementById(‘chart_div’));
-chart.draw(data, options);
-}
+                             ]);
+
+                             var options = {
+                                    title: ‘My Daily Activities’
+                             };
+
+                            var chart = new google.visualization.PieChart(document.getElementById(‘chart_div’));
+                            chart.draw(data, options);
+        }
 </script>
